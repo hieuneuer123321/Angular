@@ -15,6 +15,8 @@ export class AppComponent {
     this.listString.push(this.name);
     console.log(this.listString);
     console.log(this.mytemplateForm);
-    this.mytemplateForm.reset();
+    this.mytemplateForm.reset({
+      name: '', // giá trị trong thuộc tính name của ô input nó sẽ reset giá trị của ô đó
+    });
   }
 }

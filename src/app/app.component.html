@@ -1,5 +1,6 @@
 <form #form="ngForm" (ngSubmit)="functionName()">
   <input [(ngModel)]="name" name="name" type="text" id="name" />
+  <input name="name1" type="text" id="name1" />
   <button type="submit">Add</button>
 </form>
 <h1 *ngFor="let item of listString">{{ item }}</h1>
